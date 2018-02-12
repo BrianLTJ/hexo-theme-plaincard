@@ -11,38 +11,40 @@
     <script src="./node_modules/materialize-css/dist/js/materialize.js"></script>
   </head>
   <body>
-    <div class="header">
-      <!-- <div class="parallax-container"> -->
-        <!-- <div class="parallax"> -->
-          <!-- <img src="./images/header_clipped.jpg"> -->
-        <!-- </div> -->
-      <!-- </div> -->
-      <div class="header-background" style="background-image:url('./images/header_clipped.jpg')"></div>
-      <div class="header-content container">
-        <div class="row">
-          LTJ's BLOG
-        </div>
-        <!-- LTJ's BLOG <br>  LTJ's BLOG <br> -->
-      </div>
-      <div class="header-nav">
-        <div class="container">
-          <div class="row">
-            <div class="col s8">
-              <ul class="nav-items">
+    <!-- <div class="navbar-fixed"> -->
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo ">LTJ's BLOG</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/">HOME</a></li>
+              <li><a href="#">ARCHIVE</a></li>
+              <li><a href="#">LAB</a></li>
+              <li><a href="#">ABOUT</a></li>
+            </ul>
+            <ul id="nav-menu" class="dropdown-content">
                 <li><a href="/">HOME</a></li>
                 <li><a href="#">ARCHIVE</a></li>
                 <li><a href="#">LAB</a></li>
                 <li><a href="#">ABOUT</a></li>
-              </ul>
-
-            </div>
-            <div class="col s4">
-              RSS
-            </div>
+            </ul>
+            <ul class="right hide-on-large-only">
+              <li><a href="#!" class="dropdown-button" data-activates='nav-menu'><i class="material-icons">menu</i></a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+    <!-- </div> -->
+   
 
+    <div class="header">
+      <div class="header-background" style="background-image:url('./images/header_clipped.jpg')"></div>
+      <div class="header-content">
+        <div class="row blog-title blog-title-line-1">
+          LTJ's BLOG
+        </div>
+        <div class="row blog-title blog-title-line-2">Some Text</div>
+      </div>
     </div>
 
 
@@ -52,41 +54,29 @@
         <!-- Post Feed -->
         <div class="col s12 l9 post-feed">
 
-          <!-- Main Area -->
-          <!-- Post Item -->
-          <div class="card horizontal small post-item">
-            <div class="card-image">
-              <img src="./images/card-img.jpg" alt="">
-            </div>
-            <div class="card-stacked waves-effect">
-              <div class="card-content">
-                <span class="card-title small"><a href="#">Card Title</a> </span>
-                <p>This is a card.</p>
-              </div>
-              <div class="card-action">
-                  <span class="card-post-time">2018-02-10</span>
-              </div>
-            </div>
-          </div>
-          <!-- End Post Item -->
-
-          <!-- Post Item -->
-          <div class="card horizontal small post-item">
+        <!-- Main Area -->
+        <!-- Post Item -->
+        <div class="card medium post-item">
           <div class="card-image">
-            <img src="./images/card-img.jpg" alt="">
+            <img src="images/card-img-horizontal2.jpg" alt="">
+            <span class="card-title">Card Title</span>
           </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <span class="card-title"><a href="#">Card Title</a> </span>
-              <p>This is a card.</p>
-              <p></p>
-            </div>
-            <div class="card-action">
-              <a href="#">READ</a>
+          <div class="card-content">
+            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt.
+          </div>
+          <div class="card-action">
+            <div class="author">
+              <div class="author-img">
+                <img src="images/headpic.jpg" alt="Author">
+              </div>
+              <div class="author-info">
+                <div class="author-name"><span class="grey-text text-darken-4">Author</span></div>
+                <div class="author-other"><span class="grey-text text-darken-2">Time</span></div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End Post Item --> 
+        <!-- End Post Item -->
 
         <!-- Post Item -->
         <div class="card medium post-item">
@@ -95,7 +85,33 @@
             <span class="card-title">Card Title</span>
           </div>
           <div class="card-content">
-            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt.
+          </div>
+          <div class="card-action">
+            <div class="author">
+              <div class="author-img">
+                <img src="images/headpic.jpg" alt="Author">
+              </div>
+              <div class="author-info">
+                <div class="author-name"><span class="grey-text text-darken-4">Author</span></div>
+                <div class="author-other"><span class="grey-text text-darken-2">Time</span></div>
+              </div>
+            </div>
+            <a href="#" class="right waves-effect blue-text text-darken-4">READ</a>
+            <span href="#!" class="right post-item-category grey-text text-darken-2">CATEGORY</span>
+            
+          </div>
+        </div>
+        <!-- End Post Item -->
+
+        <!-- Post Item -->
+        <div class="card medium post-item">
+          <div class="card-image">
+            <img src="images/card-img-horizontal2.jpg" alt="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt.
           </div>
           <div class="card-action">
             <div class="author">
