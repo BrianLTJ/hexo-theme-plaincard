@@ -90,5 +90,67 @@ main {
 
 
 .post-item {
-  height: 180px !important;
+  margin-bottom: 1.5em;
+}
+
+.card-post-time {
+  line-height: 2em;
+  color: #37474f;
+}
+
+.post-item .card-image {
+  height: 200px;
+}
+
+.post-item .card-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* .card-content {
+  overflow: hidden;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+} */
+
+.author {
+  padding: 0;
+  margin: 0;
+}
+
+.author .author-img {
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  margin: 0;
+  /* display: inline-block; */
+  float: left;
+}
+
+.author .author-img img {
+  width:3em;
+  height:3em;
+  border-radius: 1.5em;
+  /* margin: 0.5em; */
+
+}
+
+.author .author-info {
+  height: 3em;
+  float: left;
+  /* display: inline-block; */
+  margin-left: 0.5em;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.author .author-info div {
+  height: 1.5em;
+  margin: 0;
+}
+
+.post-item-title {
+  width: 100%;
+  background-color: rgba(33,33,33, 0.8);
+  filter: blur(20px);
 }

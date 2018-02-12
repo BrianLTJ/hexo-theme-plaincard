@@ -5,6 +5,7 @@
     <title>LTJ's BLOG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="./node_modules/material-design-icons/iconfont/material-icons.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/materialize-css/dist/js/materialize.js"></script>
@@ -48,6 +49,7 @@
     <main>
     <div class="container">
       <div class="row">
+        <!-- Post Feed -->
         <div class="col s12 l9 post-feed">
 
           <!-- Main Area -->
@@ -56,13 +58,13 @@
             <div class="card-image">
               <img src="./images/card-img.jpg" alt="">
             </div>
-            <div class="card-stacked">
+            <div class="card-stacked waves-effect">
               <div class="card-content">
-                <span class="card-title"><a href="#">Card Title</a> </span>
+                <span class="card-title small"><a href="#">Card Title</a> </span>
                 <p>This is a card.</p>
               </div>
               <div class="card-action">
-                <a href="#">READ</a>
+                  <span class="card-post-time">2018-02-10</span>
               </div>
             </div>
           </div>
@@ -77,6 +79,7 @@
             <div class="card-content">
               <span class="card-title"><a href="#">Card Title</a> </span>
               <p>This is a card.</p>
+              <p></p>
             </div>
             <div class="card-action">
               <a href="#">READ</a>
@@ -85,10 +88,41 @@
         </div>
         <!-- End Post Item --> 
 
-          
+        <!-- Post Item -->
+        <div class="card medium post-item">
+          <div class="card-image">
+            <img src="images/card-img-horizontal2.jpg" alt="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+          </div>
+          <div class="card-action">
+            <div class="author">
+              <div class="author-img">
+                <img src="images/headpic.jpg" alt="Author">
+              </div>
+              <div class="author-info">
+                <div class="author-name"><span class="grey-text text-darken-4">Author</span></div>
+                <div class="author-other"><span class="grey-text text-darken-2">Time</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Post Item -->
 
+        <!-- Page Switcher -->
+        <div class="row">
+          <!-- Last Page -->
+          <a class="waves-effect waves-teal btn-flat" href="#!"><i class="material-icons">chevron_left</i></a>
+          <!-- Next Page -->
+          <a class="waves-effect waves-teal btn-flat" href="#!"><i class="material-icons">chevron_right</i></a>
+        </div>
+        <!-- End Page Switcher -->
+        
 
         </div>
+        <!-- End Post Feed Area -->
 
         <!-- Side Bar Area -->
         <div class="col s12 l3 side-widgets">
@@ -97,7 +131,12 @@
             <div class="card">
               <div class="card-content">
                 <span class="card-title">CATEGORIES</span>
-                <p>Card Side.</p>
+                <ul class="category-list cate-tag-list">
+                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                </ul>
               </div>
             </div>
           <!-- </div> -->
@@ -106,7 +145,12 @@
             <div class="card">
               <div class="card-content">
                 <span class="card-title">TAGS</span>
-                <p>Card Side.</p>
+                <ul class="tag-list cate-tag-list">
+                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
+                  </ul>
               </div>
             </div>
           <!-- </div> -->
