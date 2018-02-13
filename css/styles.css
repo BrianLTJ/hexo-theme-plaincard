@@ -1,3 +1,7 @@
+/*
+ * Styles for common elements
+*/
+
 body {
   background-color: #f4f8fb;
   display: flex;
@@ -249,3 +253,11 @@ main {
   opacity: 0;
   visibility: hidden;
 }
+
+
+/* Style for post */
+.post-area article {
+  padding: 1em 2em;
+  margin: 2em 0;
+}
+
