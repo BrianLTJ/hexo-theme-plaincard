@@ -10,10 +10,14 @@ $(document).ready(function(){
     })
 })
 
-/* Auto Hide and Show Nav bar */
+
 $(document).ready(function(){
     var last_offset = 0;
     $(document).scroll(function(){
+/*
+ *  Auto Hide and Show Nav bar 
+*/
+
         // Fetch the direction of scroll
         var body_offset = document.getElementsByTagName("body")[0].getBoundingClientRect().top;
         // If Page Scroll Up
@@ -30,7 +34,7 @@ $(document).ready(function(){
            }
         }
         // Set background Color
-        if(body_offset<-50) {
+        if(body_offset<-70) {
             $("#nav").removeClass("nav-transparent");
             $("#nav").addClass("nav-black");
         } else {
@@ -40,6 +44,27 @@ $(document).ready(function(){
 
         // Update last_offset
         last_offset = body_offset;
+
+/**
+ * Auto show and hide to-top button
+ */
+        // Show button
+        if(body_offset<-200) {
+            $("#to-top").fadeIn(300);
+        }
+
+        // Hide button
+        if(body_offset>-140) {
+            $("#to-top").fadeOut(300);
+        }
+
+    });
+
+    // End of Sroll Event
+    
+    // Scroll to top when clicked
+    $("#to-top").click(function(){
+        $("html, body").animate({scrollTop: 0});
     });
 });
 
