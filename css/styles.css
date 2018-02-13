@@ -220,24 +220,32 @@ main {
 
 .corner-btn-container {
   position: fixed;
-  right: 20px;
-  bottom: 112px;
+  right: 15px;
+  bottom: 100px;
 }
 .corner-btn {
-  width: 3em;
-  height: 3em;
-  line-height: 2em;
+  width: 2.4em;
+  height: 2.4em;
+  /* line-height: 2.4em; */
   font-size: 1.5em;
-  padding: 0.16em;
+  padding: 0.3em;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   background-color: #212121;
   color: white;
-  float: right;
-  margin-left: 1em;
+  /* float: right; */
+  margin: 0.5em 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
-.to-top {
+.corner-btn i {
+  font-size: 1.8em;
+}
 
-  display: none;
+.corner-btn.corner-btn-hide {
+  opacity: 0;
+  visibility: hidden;
 }
