@@ -13,6 +13,20 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     var last_offset = 0;
+    /**
+     * 
+     * Initializations
+     * 
+     */
+
+        // Initialize Modals
+        $(".modal").modal();
+
+    /**
+     * 
+     * Scroll Event Listener
+     * 
+     */
     $(document).scroll(function(){
 /*
  *  Auto Hide and Show Nav bar 
@@ -65,6 +79,11 @@ $(document).ready(function(){
     // Scroll to top when clicked
     $("#to-top").click(function(){
         $("html, body").animate({scrollTop: 0});
+    });
+
+    // TOC mobile btn init
+    $('#toc-corner-btn').click(function(){
+        $("#mobile-toc").modal('open');
     });
 });
 
