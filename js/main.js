@@ -104,10 +104,12 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: 0});
     });
 
-    // TOC mobile btn init
-    $('#toc-corner-btn').click(function(){
-        $("#mobile-toc").modal('open');
+    // Click to pop up toc-mobile
+    $("#toc-corner-btn").click(function(){
+        $("#toc-mobile").modal('open');
     });
+
+    
 });
 
 
