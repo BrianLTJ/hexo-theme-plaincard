@@ -1,3 +1,34 @@
 /*
  * Styles for index page
  */
+ main {
+  top: -100px;
+}
+.post-item {
+  margin-bottom: 2em;
+}
+
+.post-item .card-image {
+  height: 200px;
+}
+
+.post-item .card-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.post-item-title {
+  width: 100%;
+  background-color: rgba(33,33,33, 0.8);
+  filter: blur(20px);
+}
+
+.post-item .card-action a {
+  line-height: 2em;
+  margin: 0.5em;
+}
+.post-item .card-action .post-item-category{
+  line-height: 2em;
+  margin: 0.5em;
+}
