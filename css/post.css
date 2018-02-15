@@ -7,4 +7,11 @@
     margin: 2em 0;
   }
   
-  
+main {
+    /* top: -120px; */
+}
+@media screen and (min-width:993px){
+    main {
+        /* top: -350px; */
+    }
+}

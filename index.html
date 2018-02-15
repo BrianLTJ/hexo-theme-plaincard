@@ -42,20 +42,20 @@
 
     <div class="header">
       <div class="header-background" style="background-image:url('./images/header_clipped.jpg')"></div>
-      <div class="header-content">
-        <div class="row blog-title blog-title-line-1">
-          LTJ's BLOG
-        </div>
-        <div class="row blog-title blog-title-line-2">Some Text</div>
-      </div>
+      
     </div>
-
+    <div class="header-content">
+      <div class="row blog-title blog-title-line-1">
+        LTJ's BLOG
+      </div>
+      <div class="row blog-title blog-title-line-2">Some Text</div>
+    </div>
 
     <main>
     <div class="container">
       <div class="row">
         <!-- Post Feed -->
-        <div class="col s12 l9 post-feed">
+        <div class="col s12 xl9 post-feed">
 
         <!-- Main Area -->
         <!-- Post Item -->
@@ -148,7 +148,7 @@
         <!-- End Post Feed Area -->
 
         <!-- Side Bar Area -->
-        <div class="col s12 l3 side-widgets">
+        <div class="col s12 xl3 side-widgets">
 
           <!-- <div class="row"> -->
             <div class="card" id="side-category">
@@ -194,10 +194,16 @@
     <!-- Corner button Container -->
     <div class="corner-btn-container">
       <!-- toc-corner btn -->
-      <div class="corner-btn waves-effect waves-light toc-corner-btn hide-on-large-only" id="toc-corner-btn">
+      <div class="corner-btn waves-effect waves-light toc-corner-btn show-on-small" id="toc-corner-btn">
         <i class="material-icons medium">toc</i>
       </div>
       <!-- End toc-corner btn -->
+
+      <!-- toc-corner norm btn -->
+      <div class="corner-btn waves-effect waves-light toc-norm-corner-btn show-on-medium-and-up" id="toc-corner-norm-btn">
+        <i class="material-icons medium">all_inclusive</i>
+      </div>
+      <!-- End toc-corner norm btn -->
 
       <!-- To Top btn -->
       <div class="to-top waves-effect waves-light corner-btn corner-btn-hide" id="to-top">
@@ -208,7 +214,7 @@
     <!-- End of Corner button container -->
 
     <!-- Mobile TOC Menu -->
-    <div id="toc-mobile" class="modal bottom-sheet">
+    <div id="toc-mobile" class="modal bottom-sheet show-on-small">
       <div class="modal-content">
         <h5>Table of Content</h5>
         <!-- TOC here -->

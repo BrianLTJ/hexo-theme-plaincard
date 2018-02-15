@@ -14,12 +14,13 @@ body {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  /* position: absolute; */
+  position: absolute;
   /* min-eight: 40%; */
-  position: relative;
+  /* position: relative; */
   display: block;
   top: 0px;
   left: 0px;
+  z-index: -1;
 }
 
 .header .header-background {
@@ -37,31 +38,31 @@ body {
 }
 
 .header-content {
-  position: absolute;
+  /* position: absolute; */
   top: 40%;
   width: 100%;
-  height: 5em;
-  margin-top: -1em;
-  /* z-index: 10; */
+  height: 10em;
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
-.header .header-content .blog-title {
+.header-content .blog-title {
   text-align: center;
   color: white;
 }
 
-.header .header-content .blog-title-line-1 {
+.header-content .blog-title-line-1 {
   font-size: 3em;
 }
-.header .header-content .blog-title-line-2 {
+.header-content .blog-title-line-2 {
   font-size: 1.2em;
 }
-.header-nav {
+/* .header-nav {
   z-index: 10;
   bottom: 0;
   position: absolute;
   width: 100%;
-}
+} */
 
 nav {
   position: fixed;
@@ -98,7 +99,7 @@ nav {
 
 main {
   position: relative;
-  top: 40%;
+  /* top: 40%; */
   flex: 1 0 auto;
 }
 
@@ -161,7 +162,7 @@ main {
   }
 
   .header .header-content {
-  margin-top: -2em;
+    margin-top: -2em;
   }
 
   .header .header-content .blog-title-line-1 {
@@ -170,6 +171,13 @@ main {
   .header .header-content .blog-title-line-2 {
     font-size: 1.5em;
   }
+
+  .header-content {
+    /* position: absolute; */
+    margin-top: 11em;
+    margin-bottom: 5em;
+  }
+
 }
 
 
@@ -208,5 +216,13 @@ main {
 .corner-btn.corner-btn-hide {
   opacity: 0;
   visibility: hidden;
+}
+
+.toc-corner-btn {
+  display: none;
+}
+
+.toc-norm-corner-btn {
+  display: none;
 }
 
