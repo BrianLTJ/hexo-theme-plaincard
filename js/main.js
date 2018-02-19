@@ -71,12 +71,12 @@ $(document).ready(function(){
         // If Page Scroll Down
         if(body_offset<last_offset){
             // If page scroll down enough, hide
-           if(body_offset<-100) {
+           if(body_offset<-150) {
             $("#nav").addClass("nav-hide");
            }
         }
         // Set background Color
-        if(body_offset<-70) {
+        if(body_offset<-100) {
             $("#nav").removeClass("nav-transparent");
             $("#nav").addClass("nav-black");
         } else {
