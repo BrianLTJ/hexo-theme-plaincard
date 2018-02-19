@@ -55,6 +55,7 @@ $(document).ready(function(){
      * 
      */
     $(document).scroll(function(){
+        console.log("Scroll");
         /*
         *  Auto Hide and Show Nav bar 
         */
@@ -107,6 +108,21 @@ $(document).ready(function(){
     // Click to pop up toc-mobile
     $("#toc-corner-btn").click(function(){
         $("#toc-mobile").modal('open');
+    });
+
+    // TOC - Normal Button trigger
+    $("#toc-corner-norm-btn").click(function(){
+        // Set toc-normal position
+          // Get toc-corner-norm-btn location rel to viewport
+        var tocNormBtnLocation = document.getElementById("toc-corner-norm-btn").getBoundingClientRect();
+          // Set toc-normal location
+        var tocNormMenuLocation = document.getElementById("toc-normal").getBoundingClientRect();
+        if((tocNormBtnLocation.bottom - tocNormMenuLocation.top) || (tocNormBtnLocation.right - tocNormMenuLocation.right)) {
+            $("#toc-normal").css("right",($(window).width()-tocNormBtnLocation.right));
+            $("#toc-normal").css("bottom",($(window).height()-tocNormBtnLocation.top+10));
+        }
+        // Toggle toc-normal visibility
+        $("#toc-normal").fadeToggle(600,"easeInOutQuint");
     });
 
     

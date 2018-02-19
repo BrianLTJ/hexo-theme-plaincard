@@ -135,46 +135,6 @@
         </div>
         <!-- End Post Feed Area -->
 
-        <!-- Side Bar Area -->
-        <div class="col s12 xl3 side-widgets">
-
-          <!-- <div class="row"> -->
-            <div class="card" id="side-category">
-              <div class="card-content">
-                <span class="card-title">CATEGORIES</span>
-                <ul class="category-list cate-tag-list">
-                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                  <li class="category-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-
-          <!-- <div class="row"> -->
-            <div class="card">
-              <div class="card-content">
-                <span class="card-title">TAGS</span>
-                <ul class="tag-list cate-tag-list">
-                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                    <li class="tag-item cate-tag-item"><a href="#">Def Cate1</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-
-          <!-- <div class="row"> -->
-            <div class="card pin-to-view">
-              <div class="card-content">
-                <p>Card Side.</p>
-              </div>
-            </div>
-          <!-- </div> -->
-
-        </div>
       </div>
     </div>
     </main>
@@ -182,7 +142,7 @@
     <!-- Corner button Container -->
     <div class="corner-btn-container">
       <!-- toc-corner btn -->
-      <div class="corner-btn waves-effect waves-light toc-corner-btn show-on-small" id="toc-corner-btn">
+      <div class="corner-btn waves-effect waves-light toc-corner-btn show-on-small" id="toc-corner-btn" data-triggers="toc-normal">
         <i class="material-icons medium">toc</i>
       </div>
       <!-- End toc-corner btn -->
@@ -200,6 +160,59 @@
       <!-- End To Top btn -->
     </div>
     <!-- End of Corner button container -->
+
+    <!-- Normal TOC Menu -->
+    <div id="toc-normal" class="toc-normal grey darken-4">
+        <ol class="toc">
+          <li class="toc-item toc-level-2">
+            <a class="toc-link" href="#Lorem-ipsum">
+              <span class="toc-number">1.</span> 
+              <span class="toc-text">Lorem ipsum</span>
+            </a>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a class="toc-link" href="#consectetur-adipiscing-elit">
+              <span class="toc-number">2.</span> 
+              <span class="toc-text">consectetur adipiscing elit</span>
+            </a>
+            <ol class="toc-child">
+              <li class="toc-item toc-level-3">
+                <a class="toc-link" href="#Praesent-a-eleifend">
+                  <span class="toc-number">2.1.</span> 
+                  <span class="toc-text">Praesent a eleifend</span>
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a class="toc-link" href="#Nam-vehicula">
+              <span class="toc-number">3.</span> 
+              <span class="toc-text">Nam vehicula</span>
+            </a>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a class="toc-link" href="#Fusce-vel-purus-enim">
+              <span class="toc-number">4.</span> 
+              <span class="toc-text">Fusce vel purus enim</span>
+            </a>
+            <ol class="toc-child">
+              <li class="toc-item toc-level-3">
+                <a class="toc-link" href="#Sed-bibendum-sapien">
+                  <span class="toc-number">4.1.</span> 
+                  <span class="toc-text">Sed bibendum sapien</span>
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a class="toc-link" href="#Vivamus-vitae-est-euismod">
+              <span class="toc-number">5.</span> 
+              <span class="toc-text">Vivamus vitae est euismod</span>
+            </a>
+          </li>
+        </ol>
+    </div>
+    <!-- End Normal TOC Menu -->
 
     <!-- Mobile TOC Menu -->
     <div id="toc-mobile" class="modal bottom-sheet">

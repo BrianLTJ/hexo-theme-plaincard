@@ -237,3 +237,13 @@ main {
   }
 }
 
+/*
+ * TOC - Normal
+ */
+.toc-normal {
+  position: fixed;
+  max-height: 40%;
+  z-index: 10;
+  padding: 1em;
+  display: none;
+}
