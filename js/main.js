@@ -41,6 +41,9 @@ $(document).ready(function(){
      * Modals
      * 
      * To-top button
+     * 
+     * Scrollspy
+     * 
      */
 
         // Initialize Modals
@@ -48,6 +51,9 @@ $(document).ready(function(){
 
         // to-top button visibility
         to_top_btn_visibility(document.getElementsByTagName("body")[0].getBoundingClientRect().top);
+
+        // Scrollspy
+        $('.scrollspy').scrollSpy();
 
     /**
      * 
