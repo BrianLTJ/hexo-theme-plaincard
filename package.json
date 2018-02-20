@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env build=html && gulp",
+    "build-ejs": "cross-env build=ejs && gulp ejs",
+    "gulp-help": "gulp --help"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +15,18 @@
     "material-icons": "^0.1.0",
     "materialize-css": "^0.100.2",
     "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-ejs": "^3.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-minify": "^2.1.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-useref": "^3.1.4"
   }
 }
