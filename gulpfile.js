@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var ejs = require("gulp-ejs");
 var minifyCSS = require('gulp-csso');
 var minify = require('gulp-minify');
+var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
@@ -29,7 +30,7 @@ gulp.task('html-build', function(){
     return gulp.src('index.html')
         .pipe(useref())
         .pipe(jsFilter)
-        .pipe(minify())
+        .pipe(uglify())
         .pipe(jsFilter.restore)
         .pipe(cssFilter)
         .pipe(minifyCSS())
@@ -52,11 +53,13 @@ gulp.task('ejs-clean:config', function(){ return del(['dist/*.yml']); });
 
 gulp.task('ejs-clean:layout', function(){ return del(['dist/layout/*']); });
 
-gulp.task('ejs-clean:languages', function(){ return del(['dist/layout/*']); });
+gulp.task('ejs-clean:languages', function(){ return del(['dist/languages/*']); });
 
-gulp.task('ejs-clean:scripts', function(){ return del(['dist/layout/*']); });
+gulp.task('ejs-clean:scripts', function(){ return del(['dist/scripts/*']); });
 
-gulp.task('ejs-clean:source', function(){ return del(['dist/layout/*']); });
+gulp.task('ejs-clean:source', function(){ return del(['dist/source/*']); });
+
+
 
 gulp.task('build-dist:source-links', ['ejs-clean:layout', 'ejs-clean:source'], function(){
     var jsFilter = filter("**/*.js", { restore: true });
@@ -71,7 +74,7 @@ gulp.task('build-dist:source-links', ['ejs-clean:layout', 'ejs-clean:source'], f
                 } 
             }))
         .pipe(jsFilter)
-        .pipe(minify())
+        .pipe(uglify())
         .pipe(jsFilter.restore)
         .pipe(cssFilter)
         .pipe(minifyCSS())
