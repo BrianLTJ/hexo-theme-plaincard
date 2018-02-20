@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env build=html && gulp",
     "build-ejs": "cross-env build=ejs && gulp ejs",
-    "gulp-help": "gulp --help"
+    "build-dist": "cross-env build=dist && gulp build-dist"
   },
   "author": "",
   "license": "ISC",
@@ -23,9 +23,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-ejs": "^3.1.1",
+    "gulp-filter": "^5.1.0",
     "gulp-if": "^2.0.2",
     "gulp-minify": "^2.1.0",
     "gulp-rev": "^8.1.1",
+    "gulp-rev-replace": "^0.4.4",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-useref": "^3.1.4"
   }
